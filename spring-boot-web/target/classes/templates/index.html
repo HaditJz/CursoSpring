@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>th:text="${titulo}"</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"></link>
+</head>
+<body>
+<h1 class="color-rojo" th:text="${titulo}"></h1>
+<h2 class="color-azul">Decorando con estilos estaticos</h2>
+<img th:src="@{/images/teclado-ingles.png}"></img>
+
+<table th:if="${not usuarios.isEmpty()}"></table>
+	
+
+</body>
+
+</html>
